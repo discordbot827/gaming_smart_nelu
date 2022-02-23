@@ -84,12 +84,12 @@ client.on("message", message => {
       .setColor("36d8ff")
       .setAuthor("Prefix Such Bot { S }").setDescription(`
 
- <a:emoji_23:856627172034871336>__**User Commands**__
+ <a:emoji_23:856627172034871336> __**User Commands**__
  \`bot\` - \`avatar\` - \`server\`
  \`invite\` - \`support\`  
 
 
-<a:emoji_18:856422764101238785> __**Economy Commands**__
+💳 __**Economy Commands**__
  \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
  \`send\` - \`steal\`
 
