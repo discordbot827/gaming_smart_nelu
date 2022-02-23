@@ -9,7 +9,7 @@ const express = require("express");
 const ayarlar = require("./ayarlar.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login("OTQzNjQ3MjEwMTcwNjE3OTI2.Yg2F8w.fMj47HR3NfJJFuxCz4QfFLQMV7U");
+client.login("TQzNjQ3MjEwMTcwNjE3OTI2.Yg2F8w.fMj47HR3NfJJFuxCz4QfFLQMV7U");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -103,14 +103,14 @@ client.on("message", message => {
  \`smoking\` - \`sad\` - \`neon\` - \`emoji\`
 
 <:emoji_26:860961711289139213> __**Link**__
-[Support Bot](https://discord.gg/GfSyTkgACS) - [Invite bot](hclient_id=765221994ermissions=8&scope=bot)  - [Website](coming soon)
+[Support Bot](https://discord.gg/GfSyTkgACS) - [Invite bot](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)  - [Website](https://fsocietybot.netlify.app/)
 `);
     message.channel.send(embed);
   }
 });
 //===============================================================================\\
 client.on("message", russi => {
-  if (russi.content === "Bserver") {
+  if (russi.content === "") {
     let embed = new Discord.MessageEmbed()
       .setTitle(`${russi.guild.name}`) ///Russi
       .setThumbnail(client.user.avatarURL())
@@ -137,7 +137,7 @@ client.on("message", russi => {
 });
 //===============================================================================\\
 client.on("message", habdo => {
-  if (habdo.content.startsWith("Bavatar")) {
+  if (habdo.content.startsWith("Savatar")) {
     var embed = new Discord.MessageEmbed()
       .setAuthor(
         `${habdo.author.username}`,
@@ -163,7 +163,7 @@ client.on("message", habdo => {
 });
 //===============================================================================\\
 client.on("message", message => {
-  if (message.content === "Bbot") {
+  if (message.content === "a") {
     const embed = new Discord.MessageEmbed().setColor("36d8ff")
       .setDescription(`
 <:8DE0F56FD6634F3CBC5C29EC7DFE99C5:780063748588044308> | **Server** : **${client.guilds.cache.size}**
@@ -189,14 +189,14 @@ client.on("message", async message => {
       )
    .setAuthor(client.user.username, client.user.avatarURL()).setDescription(`
    
-<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT Prefix : B**
+🤖 | **BOT Prefix : S**
 
       
-<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT** [Support](https://discord.gg/tqW6VXW8CS)
+♻️ | **BOXBOT** [Support](https://discord.gg/GfSyTkgACS)
 
-<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)
+🌐  | **BOXBOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)
 
-<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT** [Website](coming soon)`);
+🖥️ | **BOXBOT** [Website](https://fsocietybot.netlify.app/)`);
 
     message.channel.send(help);
   }

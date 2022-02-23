@@ -56,9 +56,9 @@ let destek = new Discord.MessageEmbed()
 //== BEERCODE (discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 exports.conf = {
     enabled: true, 
-    aliases: ["games","h",'game','gameing'],
+    aliases: ["","",'',''],
   };
   
   exports.help = {
-    name: 'kue'
+    name: ''
   };
