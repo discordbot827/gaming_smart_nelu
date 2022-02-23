@@ -9,7 +9,7 @@ const express = require("express");
 const ayarlar = require("./ayarlar.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login("TQzNjQ3MjEwMTcwNjE3OTI2.Yg2F8w.fMj47HR3NfJJFuxCz4QfFLQMV7U");
+client.login("OTQzNjQ3MjEwMTcwNjE3OTI2.Yg2F8w.fMj47HR3NfJJFuxCz4QfFLQMV7U");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -110,7 +110,7 @@ client.on("message", message => {
 });
 //===============================================================================\\
 client.on("message", russi => {
-  if (russi.content === "") {
+  if (russi.content === "a") {
     let embed = new Discord.MessageEmbed()
       .setTitle(`${russi.guild.name}`) ///Russi
       .setThumbnail(client.user.avatarURL())

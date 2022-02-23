@@ -32,7 +32,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
     let moneyEmbed = new Discord.MessageEmbed()
   .setColor("36d8ff")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-  .setDescription(`To steal money you need at least 200 💸 coins`);
+  .setDescription(`To steal money you need at least 200 💵 coins`);
 
 
   if (author2 < 200) {
@@ -65,7 +65,7 @@ db.add(`para_${message.author.id}`, -lostmoney)
 
   let embed = new Discord.MessageEmbed()
    .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-   .setDescription(` Robbery Successful, ${user}'you robbed and ${gotmoney} <a:emoji_25:870145821469966406> you won`)
+   .setDescription(` Robbery Successful, ${user}'you robbed and ${gotmoney} 💵 you won`)
    .setColor("36d8ff")
 
    message.channel.send(embed)

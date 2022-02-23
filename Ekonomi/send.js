@@ -32,7 +32,7 @@ db.add(`para_${message.author.id}`, -para)
 message.channel.send(new Discord.MessageEmbed()
 .setColor("36d8ff")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(` Successful, ${etiket}'a ${para} 💸 you sent!`))
+.setDescription(` Successful, ${etiket}'a ${para} 💵 you sent!`))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
  } else {
   if(isNaN(miktar)) return message.channel.send(new Discord.MessageEmbed()
@@ -48,7 +48,7 @@ message.channel.send(new Discord.MessageEmbed()
   if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
                       .setColor("36d8ff")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))                 
-                      .setDescription(`<Now in your hand ${para ? "just " + para + " 💸 there is!": "there is no money!"} `))
+                      .setDescription(`<Now in your hand ${para ? "just " + para + " 💵 there is!": "there is no money!"} `))
 if(miktar === 'all' || miktar === 'all') {
   return;
 }  else { //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
