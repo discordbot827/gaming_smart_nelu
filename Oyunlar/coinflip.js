@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
         message.channel.send(new Discord.MessageEmbed()
                       .setColor("#ffff00")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`<a:emoji_22:870143282594865213> You Have A Cooldown For __coinflip__
+                        .setDescription(`🧭 You Have A Cooldown For __coinflip__
                         **Time left**
                         ${time.seconds ? time.seconds + 'seconds' : 'try again!'}`))
       } else {
@@ -24,16 +24,16 @@ exports.run = async (client, message, args) => {
   if(!miktar) return message.channel.send(new Discord.MessageEmbed()
                                         .setColor("RANDOM")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                                        .setDescription(`You Can't More Than<:emoji_61:867523675304624148> 50,000`))
+                                        .setDescription(`You Can't More Than 💵 50,000`))
  if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
                                         .setColor("RANDOM")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                                        .setDescription(`You can bet up to 50000 <a:emoji_25:870145821469966406>!`))   
+                                        .setDescription(`You can bet up to 50000`))   
 if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
                                               .setColor("RANDOM")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                                        .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' <a:emoji_25:870145821469966406> there is!' : 'you have no money!'}`))
+                                        .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' there is!' : 'you have no money!'}`))
         const result = [
           "LOOSELOOSE",
           "WINWIN",
@@ -46,11 +46,11 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
      if (awnser === "LOOSELOOSE") {
  var kaybettin = miktar*1       
         //////        
-        var text2 = `<@${message.author.id}> spent <:emoji_75:905991272370696202> ${kazandın} and chose **heads** the coin spins...<a:emoji_52:878634024271224872>`;
+        var text2 = `<@${message.author.id}> spent 💵 ${kazandın} and chose **heads** the coin spins...-<a:emoji_35:864376531828080691>`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`<@${message.author.id}>spent <:emoji_75:905991272370696202> ${-kaybettin}  and chose **heads**
-The coin spins...💰 tail and you **lost** it all... :c`);
+              msg.edit(`<@${message.author.id}>spent 💵  ${-kaybettin}  and chose **heads**
+The coin spins... <a:emoji_35:864376531828080691> tail and you **lost** it all.. :c`);
             }, 3000);
           });
       await db.set(`bahisoynama_${message.author.id}`, Date.now());   
