@@ -24,8 +24,8 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(` The amount you entered is not a valid number !?`))
- let kazandin = miktar*3   
-  let slots = ["🤖","🌐","🏅","💵"];
+ let kazandin = miktar*2   
+  let slots = ["<:emoji_44:898254653291102309>","🌐","🎁","💵"];
   //
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   let result1 = Math.floor((Math.random() * slots.length));
@@ -47,14 +47,14 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     var text2 = `**
     ___SLOTS___  
-|<a:766617203050938398:891462862667644938><a:766617203050938398:891462862667644938><a:766617203050938398:891462862667644938>|${message.author.username}
+|<a:emoji_7:897976340018515988><a:emoji_7:897976340018515988><a:emoji_7:897976340018515988>|${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`**
     ___SLOTS___  
-|${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username} <a:emoji_11:777481714800656424> ${kazandin}+
+|${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username}  ${kazandin}+
 |                  |
 |                  |**`,true);
             }, 3500);
@@ -65,14 +65,14 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   } else {
     var text3 = `**
     ___SLOTS___  
-|<a:766617203050938398:891462862667644938><a:766617203050938398:891462862667644938><a:766617203050938398:891462862667644938>|${message.author.username}
+|<a:emoji_7:897976340018515988><a:emoji_7:897976340018515988>-<a:emoji_7:897976340018515988>|${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text3).then(msg => {
             setTimeout(() => {
               msg.edit(`**
     ___SLOTS___  
-|${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username} <a:emoji_14:777483792159866900> ${miktar}-
+|${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username}  ${miktar}-
 |                  |
 |                  |**`, true);
             }, 3500);
