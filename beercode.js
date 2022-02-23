@@ -21,27 +21,27 @@ require("./util/eventLoader.js")(client);
 
 //===============================================================================\\
 client.on("ready", async () => {
-  client.user.setActivity(`Bhelp |Server, ${client.guilds.cache.size}`, {
+  client.user.setActivity(`Shelp |Server, ${client.guilds.cache.size}`, {
     type: "PLAYING"
   });
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === "Binvite") {
-    emprator.channel.send("https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot");
+  if (emprator.content === "Sinvite") {
+    emprator.channel.send("https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot");
   }
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === "Bsupport") {
-    emprator.channel.send("https://discord.gg/tqW6VXW8CS");
+  if (emprator.content === "Ssupport") {
+    emprator.channel.send("https://discord.gg/GfSyTkgACS");
   }
 });
 //===============================================================================\\
 client.on("message", message => {
   if (message.guild) return;
   if (message.author.bot) return;
-  var channel = client.channels.cache.get("899321551407697970");
+  var channel = client.channels.cache.get("944232459267104808");
   if (!channel) return;
   var embed = new Discord.MessageEmbed()
     .setColor("36d8ff")
@@ -60,7 +60,7 @@ client.on("message", message => {
 });
 //===============================================================================\\
 client.on("guildCreate", guild => {
-  client.channels.cache.get("870341021186265188").send(`
+  client.channels.cache.get("944232459267104808").send(`
 ✅ **Join Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
 👑 **Server Owner**: ${guild.owner}
@@ -69,7 +69,7 @@ client.on("guildCreate", guild => {
 });
 ////////////////////////////////////////////
 client.on("guildDelete", guild => {
-  client.channels.cache.get("870341021186265188").send(`
+  client.channels.cache.get("944232459267104808").send(`
 ❎ **Lift Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
 👑 **Server Owner**: ${guild.owner}
@@ -78,32 +78,32 @@ client.on("guildDelete", guild => {
 });
 //================================================================================\\
 client.on("message", message => {
-  if (message.content === "Bhelp") {
+  if (message.content === "Shelp") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
       .setColor("36d8ff")
-      .setAuthor("Prefix BOXBOT { B }").setDescription(`
+      .setAuthor("Prefix Such Bot { S }").setDescription(`
 
-<a:megaphone:891453230561779772> __**User Commands**__
+ <a:emoji_23:856627172034871336>__**User Commands**__
  \`bot\` - \`avatar\` - \`server\`
  \`invite\` - \`support\`  
 
 
-<:D99550EF5863457D8697E8B50AD765BD:780076663458365460> __**Economy Commands**__
+<a:emoji_18:856422764101238785> __**Economy Commands**__
  \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
  \`send\` - \`steal\`
 
-<:ItemController:891215368562040842> __**Game Comamnds**__
+🏅 __**Game Comamnds**__
  \`coinflip(cf)\` - \`slots(s)\`
  \`fish(f)\`
 
-<:DD53C5544F404C0BA8CEBC373BE7F497:780063744193593374> __**Gif Commands**__
+<a:emoji_35:864376531828080691> __**Gif Commands**__
  \`anime\` - \`animel\` - \`boy\`
  \`girl\` - \`baby\` - \`coulpe\`
  \`smoking\` - \`sad\` - \`neon\` - \`emoji\`
 
-<:7BFDFD5B404342CD951E25B6A2D64426:780076669238116352> __**Link**__
-[Support Bot](https://discord.gg/tqW6VXW8CS) - [Invite BOXBOT](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)  - [Website](coming soon)
+<:emoji_26:860961711289139213> __**Link**__
+[Support Bot](https://discord.gg/GfSyTkgACS) - [Invite bot](hclient_id=765221994ermissions=8&scope=bot)  - [Website](coming soon)
 `);
     message.channel.send(embed);
   }
