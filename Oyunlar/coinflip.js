@@ -49,7 +49,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
         var text2 = `<@${message.author.id}> spent 💵 ${kazandın} and chose **heads** the coin spins...<a:emoji_5:897153200107433995>`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`<@${message.author.id}>spent 💵  ${-kaybettin}  and chose **heads**
+              msg.edit(`<@${message.author.id}>spent <a:emoji_6:897287788674834525>  ${-kaybettin}  and chose **heads**
 The coin spins...  tail and you **lost** it all.. :c`);
             }, 3000);
           });

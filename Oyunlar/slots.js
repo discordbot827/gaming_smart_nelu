@@ -8,24 +8,24 @@ exports.run = function(client, message,  args) {
   if(!miktar) return message.channel.send(new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
       .setColor("RANDOM")
-      .setDescription(`**slots** You Can't More Than <a:emoji_50:872142301789564969> 50,000`))
+      .setDescription(`**slots** You Can't More Than 💵 50,000`))
   //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
       .setColor("GREEN")
-      .setDescription(`**slots**You Can't More Than <a:emoji_50:872142301789564969> 50,000`))
+      .setDescription(`**slots**You Can't More Than 💵 50,000`))
   /////////////
 if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   .setColor("RANDOM")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-  .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' <a:emoji_50:872142301789564969> there is!' : 'you have no money!'}`))
+  .setDescription(`In your wallet to place a bet ${para ? "just " + para + '  there is!' : 'you have no money!'}`))
   /////////////////
   if(isNaN(miktar) || miktar < 0) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(`<a:emoji_50:872142301789564969> The amount you entered is not a valid number !?`))
- let kazandin = miktar*3   
-  let slots = ["<:emoji_79:905868902746169375>","<:emoji_78:905869242589650946>","<:emoji_77:905869219198021692>","<:emoji_79:905868902746169375>"];
+.setDescription(` The amount you entered is not a valid number !?`))
+ let kazandin = miktar*2   
+  let slots = ["<a:emoji_46:898256438835707964>","<:emoji_45:898254686644207616>","<:emoji_44:898254653291102309>",""];
   //
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   let result1 = Math.floor((Math.random() * slots.length));
@@ -47,7 +47,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     var text2 = `**
     ___SLOTS___  
-|<a:766617203050938398:891462862667644938><a:766617203050938398:891462862667644938><a:766617203050938398:891462862667644938>|${message.author.username}
+||${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text2).then(msg => {
