@@ -25,7 +25,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(` The amount you entered is not a valid number !?`))
  let kazandin = miktar*2   
-  let slots = ["<:emoji_44:898254653291102309>","🌐","🎁","💵"];
+  let slots = ["<:emoji_44:898254653291102309>","<:emoji_46:898256438835707964>","<:emoji_45:898254686644207616>",""];
   //
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   let result1 = Math.floor((Math.random() * slots.length));
@@ -65,7 +65,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   } else {
     var text3 = `**
     ___SLOTS___  
-|<a:emoji_7:897976340018515988><a:emoji_7:897976340018515988>-<a:emoji_7:897976340018515988>|${message.author.username}
+|<a:emoji_7:897976340018515988><a:emoji_7:897976340018515988><a:emoji_7:897976340018515988>|${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text3).then(msg => {
