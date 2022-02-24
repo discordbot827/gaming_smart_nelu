@@ -21,7 +21,7 @@ require("./util/eventLoader.js")(client);
 
 //===============================================================================\\
 client.on("ready", async () => {
-  client.user.setActivity(`Shelp |Server, ${client.guilds.cache.size}`, {
+  client.user.setActivity(`Shelp |Server 4/100`, {
     type: "PLAYING"
   });
 });
