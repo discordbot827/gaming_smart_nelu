@@ -106,7 +106,9 @@ client.on("message", message => {
 <:emoji_26:860961711289139213> __**Link**__
 [Support Bot](https://discord.gg/GfSyTkgACS) - [Invite bot](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)  - [Website](https://fsocietybot.netlify.app/)
 `);
-    message.react("")
+    message.react("⬅️")
+    message.react("⏺")
+    message.react("➡️")
     message.channel.send(embed);
   }
 });
