@@ -45,7 +45,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
         let awnser = result[Math.floor(Math.random() * result.length)]
      if (awnser === "LOOSELOOSE") {
- var kaybettin = miktar*2       
+ var kaybettin = miktar*1       
         //////        
         var text2 = `<@${message.author.id}> spent 💵 ${kazandın} and chose **heads** the coin spins...<a:emoji_5:897153200107433995>`;
           message.channel.send(text2).then(msg => {
