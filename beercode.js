@@ -81,7 +81,8 @@ client.on("message", message => {
   if (message.content === "Shelp") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
-      .setColor("36d8ff")
+         .setImage("https://media.discordapp.net/attachments/944232459267104808/946451184242266132/image0.jpg")
+      .setColor("#E4B400")
       .setAuthor("Prefix Such Bot { S }").setDescription(`
 
  <a:emoji_23:856627172034871336> __**User Commands**__
@@ -89,7 +90,7 @@ client.on("message", message => {
  \`invite\` - \`support\`  
 
 
-💳 __**Economy Commands**__
+💵 __**Economy Commands**__
  \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
  \`send\` - \`steal\`
 
