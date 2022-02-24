@@ -27,9 +27,10 @@ exports.run = async (client, message, args) => {
                       .setColor("36d8ff")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-                                                .setDescription(`You Can't More Than <a:emoji_29:875051721288732762> 250`))
+                                                .setDescription(`You Can't More Than🛑`))
         const result = [
           "WINWIN",
+          "LOOSELOOSE",
           "LOOSELOOSE"
         ] 
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\

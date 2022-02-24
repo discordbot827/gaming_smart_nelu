@@ -4,7 +4,7 @@ const ms = require('parse-ms');
 exports.run = async (client, message, args) => {   
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   
-   let timeout = 72000;
+   let timeout = 7200000;
    function rastgeleMiktar(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -30,6 +30,8 @@ exports.run = async (client, message, args) => {
                                                 .setDescription(`You have to rent a fishing line from your uncle for fishing! Money Required: 250 `))
         const result = [
           "WINWIN",
+          "LOOSELOOSE",
+          "LOOSELOOSE"
         ] 
 ////////
  const sentences2 = ["You caught the bream","You caught anchovies","You grabbed a ram","You hired Isavrit"]
