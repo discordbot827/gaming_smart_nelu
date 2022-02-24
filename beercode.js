@@ -84,7 +84,7 @@ client.on("message", message => {
          .setImage("https://media.discordapp.net/attachments/944232459267104808/946451184242266132/image0.jpg")
       .setColor("#E4B400")
       .setAuthor("Prefix Such Bot { S }").setDescription(`
-
+   
  <a:emoji_23:856627172034871336> __**User Commands**__
  \`bot\` - \`avatar\` - \`server\`
  \`invite\` - \`support\`  
@@ -106,6 +106,7 @@ client.on("message", message => {
 <:emoji_26:860961711289139213> __**Link**__
 [Support Bot](https://discord.gg/GfSyTkgACS) - [Invite bot](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)  - [Website](https://fsocietybot.netlify.app/)
 `);
+    message.react("")
     message.channel.send(embed);
   }
 });
