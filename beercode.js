@@ -90,7 +90,8 @@ client.on("message", message => {
  \`invite\` - \`support\`  
 
  <a:emoji_30:862384237890240524> __**Moderator Command**__
-
+ \`lock\` - \`unlock\` \`lockall\` - \`unlockall\`
+ \`ban\` - \`botilst\` \`mute\` - \`unmute\`
 💵 __**Economy Commands**__
  \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
  \`send\` - \`steal\`
@@ -728,5 +729,65 @@ client.on("message", async message => {
       .catch(e => {
         client.log.error(e);
       });
+  }
+});
+
+
+
+client.on("message", async message => {
+  if (message.content === ("Sunlock")) {
+    if (!message.channel.guild)
+      return message.channel.send(
+         "**❌ | Sorry This Command Only For Servers .**"
+      );
+
+    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
+    if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
+      return;
+    message.channel.updateOverwrite(message.guild.id, {
+      SEND_MESSAGES: null
+    });
+    const unlock = new Discord.MessageEmbed()
+      .setColor("#E4B400")
+      .setDescription(
+        `🔓 | **UnLocked Channel**
+Channel Name : <#${message.channel.id}>
+Locked By : <@${message.author.id}>
+Channel Status : Send Message : ✅
+`
+      )
+      .setThumbnail(message.author.avatarURL())
+      .setFooter(`${message.author.tag}`, message.author.avatarURL());
+    message.channel.send(unlock);
+  }
+});
+client.on("message", async message => {
+  if (message.content === ("Slock")) {
+    if (!message.channel.guild)
+      return message.channel.send(
+        "**❌ | Sorry This Command Only For Servers .**"
+      );
+
+    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
+    if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
+      return;
+    message.channel.updateOverwrite(message.guild.id, {
+      SEND_MESSAGES: false
+    });
+     const lock = new Discord.MessageEmbed()
+     
+      .setColor("#E4B400")
+      .setDescription(
+        `🔒 | **Locked Channel**
+Channel Name : <#${message.channel.id}>
+Locked By : <@${message.author.id}>
+Channel Status : Send Message : ❌
+`
+      )
+      .setThumbnail(message.author.avatarURL())
+     .setFooter(`${message.author.tag}`, message.author.avatarURL())
+          .setTimestamp()
+
+    message.channel.send(lock);
   }
 });
