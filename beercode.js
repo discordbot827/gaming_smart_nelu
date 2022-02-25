@@ -86,12 +86,12 @@ client.on("message", message => {
       .setAuthor("Prefix Such Bot { S }").setDescription(`
    
  <a:emoji_23:856627172034871336> __**User Commands**__
- \`avatar\` - \`server\`
+ \`avatar\` - \`bot\`
  \`invite\` - \`support\`  
 
  <a:emoji_30:862384237890240524> __**Moderator Command**__
  \`lock\` - \`unlock\` \`lockall\` - \`unlockall\`
- \`ban\` - \`botilst\` \`mute\` - \`unmute\`
+ 
 💵 __**Economy Commands**__
  \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
  \`send\` - \`steal\`
@@ -166,19 +166,13 @@ client.on("message", habdo => {
 });
 //===============================================================================\\
 client.on("message", message => {
-  if (message.content === "i") {
-    const embed = new Discord.MessageEmbed().setColor("36d8ff")
+  if (message.content === "Sbot") {
+    const embed = new Discord.MessageEmbed().setColor("#E4B400")
       .setDescription(`
- | **Server** : **${client.guilds.cache.size}**
- | **Language Bot** <:44C01BE16178485A9CA5DFAABE758C87:783484186644185150>
- | **User** : **${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1**
-<a:793><<a:793831642401603624:891456264364769290>
-<a:867324413267542026:892078131765190686> | **Owner Bot** 
-<@857722289600987137>
-<a:867324402151718932:892090597433823323> | **Admin Bot**
-<@873283800954703912>
-<@712407561676259418>
-<@699776595317096542>`);
+<a:emoji_23:856627172034871336>| **Server** : **${client.guilds.cache.size}**
+ <:emoji_26:860961711289139213>| **User** : **${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1**
+<a:emoji_25:856627227030585424>| **Owner Bot** <@943470624666419231>
+`);
     message.channel.send(embed);
   }
 });
