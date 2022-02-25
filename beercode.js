@@ -86,9 +86,10 @@ client.on("message", message => {
       .setAuthor("Prefix Such Bot { S }").setDescription(`
    
  <a:emoji_23:856627172034871336> __**User Commands**__
- \`bot\` - \`avatar\` - \`server\`
+ \`avatar\` - \`server\`
  \`invite\` - \`support\`  
 
+ <a:emoji_30:862384237890240524> __**Moderator Command**__
 
 💵 __**Economy Commands**__
  \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
