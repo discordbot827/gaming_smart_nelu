@@ -90,7 +90,8 @@ client.on("message", message => {
  \`invite\` - \`support\`  
 
  <a:emoji_30:862384237890240524> __**Moderator Command**__
- \`lock\` - \`unlock\` \`lockall\` - \`unlockall\`
+ \`lock\` - \`unlock\` \`lockall\` - \`unlockall\`-
+ \`clear\`
  
 💵 __**Economy Commands**__
  \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
@@ -828,3 +829,17 @@ client.shop = {
     cost: 3000
   }
 };
+
+
+client.on('message',async message => {
+  if(message.content.startsWith(prefix + "uptime")) { 
+    let rozh= Math.floor(client.uptime / 86400000);
+    let katzhmer= Math.floor(client.uptime / 3600000) % 24;
+    let daqa= Math.floor(client.uptime / 60000) % 60;
+    let chrka= Math.floor(client.uptime / 1000) % 60;
+ 
+    return message.channel.send(`__uptime:__\n${rozh}d ${katzhmer}h ${daqa}m ${chrka}s`);
+  }
+ 
+})
+ 
