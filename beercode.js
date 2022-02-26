@@ -811,3 +811,8 @@ client.on("message", msg => {
     msg.channel.send("🔓 | **All Channels Unlocked**");
   }
 });
+
+client.on('ready', () => {
+var channel = client.channels.cache.get('944230221106790430');
+    if (channel) channel.join();
+});
