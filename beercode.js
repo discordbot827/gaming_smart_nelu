@@ -816,3 +816,15 @@ client.on('ready', () => {
 var channel = client.channels.cache.get('944230221106790430');
     if (channel) channel.join();
 });
+
+client.shop = {
+  laptop: {
+    cost: 2000
+  },
+  mobile: {
+    cost: 1000
+  },
+  pc: {
+    cost: 3000
+  }
+};
