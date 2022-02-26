@@ -837,7 +837,7 @@ client.on('message',async message => {
     let daqa= Math.floor(client.uptime / 60000) % 60;
     let chrka= Math.floor(client.uptime / 1000) % 60;
  
-    return message.channel.send(`__uptime:__\n${rozh}d ${katzhmer}h ${daqa}m ${chrka}s`);
+    return message.channel.send(`__uptime:__ <:emoji_45:947248392193593425>   \n${rozh}d ${katzhmer}h ${daqa}m ${chrka}s`);
   }
  
 })
