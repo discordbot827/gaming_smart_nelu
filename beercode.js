@@ -87,11 +87,10 @@ client.on("message", message => {
    
  <a:emoji_23:856627172034871336> __**User Commands**__
  \`avatar\` - \`bot\`
- \`invite\` - \`support\`  
+ \`invite\` - \`support\`-\`uptime\`
 
  <a:emoji_30:862384237890240524> __**Moderator Command**__
  \`lock\` - \`unlock\` \`lockall\` - \`unlockall\`-
- \`clear\`
  
 💵 __**Economy Commands**__
  \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
@@ -832,7 +831,7 @@ client.shop = {
 
 
 client.on('message',async message => {
-  if(message.content === + "Suptime") { 
+  if(message.content === "Suptime") { 
     let rozh= Math.floor(client.uptime / 86400000);
     let katzhmer= Math.floor(client.uptime / 3600000) % 24;
     let daqa= Math.floor(client.uptime / 60000) % 60;
@@ -844,7 +843,7 @@ client.on('message',async message => {
 })
 
 client.on('message', function(alone) {
-    if(alone.content === + "Ssay") {
+    if(alone.content === "Ssay") {
 
  let say = alone.content.split(" ").slice(1).join(" ");
       const ALONE = new Discord.MessageEmbed()
@@ -855,30 +854,3 @@ client.on('message', function(alone) {
  
 }
 });
-
-client.on('message', message => {
-           if (!message.channel.guild) return;
-    let room = message.content.split(' ').slice(1).join(" ")
-    let channel = message.guild.channels.cache.find(c => c.name === `${room}`) || message.mentions.channels.first()
-    if(message.content === "Slevel") {
-        if(!message.channel.guild) return;
-        if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send('**Sorry But You Dont Have Permission** `MANAGE_GUILD`' );
-if(!room) return message.channel.send('**Please Type The Name Channel Or Mention**')
-if(!channel) return message.channel.send('**Cant Find This Channel**')
-let embed = new Discord.MessageEmbed()
-.setAuthor(message.author.username,message.author.avatarURL())
-.setThumbnail(message.author.avatarURL())
-.setTitle('**✅Done Check The Level Code Has Been Setup**')
-.addField('Channel', `${room}`)
-.addField('Server', `${message.guild.name}`)
-.addField('Requested By', `${message.author}`)
-.setColor("RANDOM")
-.setFooter(`${client.user.username}`)
-.setTimestamp()
-message.channel.send(embed)
-[message.guild.id] = {
-channel: channel.name,
-}
-fs.writeFile("./setxp.json", JSON.stringify(), (err) => {
-if (err) console.error(err)
-})}})
