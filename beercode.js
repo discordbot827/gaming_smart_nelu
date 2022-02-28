@@ -9,7 +9,7 @@ const express = require("express");
 const ayarlar = require("./ayarlar.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login("OTQ0OTkyODYwMjY3MjI5MTk1.YhJrLw.i7COI4ST3XITnoD0qm2dOQn-XhM");
+client.login("OTQ0OTkyODYwMjY3MjI5MTk1.YhJrLw.aU048_VSBloq4abSWFggN6Q-J3s");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -21,19 +21,19 @@ require("./util/eventLoader.js")(client);
 
 //===============================================================================\\
 client.on("ready", async () => {
-  client.user.setActivity(`Shelp |Server 4/100`, {
+  client.user.setActivity(`#help |Server 4/100`, {
     type: "PLAYING"
   });
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === "Sinvite") {
+  if (emprator.content === "#invite") {
     emprator.channel.send("https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot");
   }
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === "Ssupport") {
+  if (emprator.content === "#support") {
     emprator.channel.send("https://discord.gg/GfSyTkgACS");
   }
 });
@@ -60,7 +60,7 @@ client.on("message", message => {
 });
 //===============================================================================\\
 client.on("guildCreate", guild => {
-  client.channels.cache.get("944232459267104808").send(`
+  client.channels.cache.get("947612319872090123").send(`
 ✅ **Join Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
 👑 **Server Owner**: ${guild.owner}
@@ -69,7 +69,7 @@ client.on("guildCreate", guild => {
 });
 ////////////////////////////////////////////
 client.on("guildDelete", guild => {
-  client.channels.cache.get("944232459267104808").send(`
+  client.channels.cache.get("947612319872090123").send(`
 ❎ **Lift Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
 👑 **Server Owner**: ${guild.owner}
@@ -78,33 +78,22 @@ client.on("guildDelete", guild => {
 });
 //================================================================================\\
 client.on("message", message => {
-  if (message.content === "Shelp") {
+  if (message.content === "#help") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
          .setImage("https://media.discordapp.net/attachments/944232459267104808/946451184242266132/image0.jpg")
       .setColor("#E4B400")
-      .setAuthor("Prefix Such Bot { S }").setDescription(`
+      .setAuthor("Prefix Tax Bot { # }").setDescription(`
    
- <a:emoji_23:856627172034871336> __**User Commands**__
- \`avatar\` - \`bot\`
- \`invite\` - \`support\`-\`uptime\`
+أوامر البوت
 
- <a:emoji_30:862384237890240524> __**Moderator Command**__
- \`lock\` - \`unlock\` \`lockall\` - \`unlockall\`-
+#daily - امنع رتبة او روم من استخدام الاوامر.
+#ping - لمعرفة سرعة اتصال البوت
+#tax - استعمل هذا الامر لحسابة ضريبة بروبوت
+#binfo - اظهار معلومات عن البوت
+#help - للحصول على جميع اوامر البوت
  
-💵 __**Economy Commands**__
- \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
- \`send\` - \`steal\`
-
-🏅 __**Game Comamnds**__
- \`coinflip(cf)\` - \`slots(s)\`
- \`fish(f)\`
-
-<a:emoji_35:864376531828080691> __**Gif Commands**__
- \`anime\` - \`animel\` - \`boy\`
- \`girl\` - \`baby\` - \`coulpe\`
- \`smoking\` - \`sad\` - \`neon\` - \`emoji\`
-
+ 
 <:emoji_26:860961711289139213> __**Link**__
 [Support Bot](https://discord.gg/GfSyTkgACS) - [Invite bot](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)  - [Website](https://fsocietybot.netlify.app/)
 `);
