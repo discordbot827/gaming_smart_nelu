@@ -87,7 +87,7 @@ client.on("message", message => {
    
 أوامر البوت
 
-#daily - امنع رتبة او روم من استخدام الاوامر.
+#dayli - امنع رتبة او روم من استخدام الاوامر.
 #ping - لمعرفة سرعة اتصال البوت
 #tax - استعمل هذا الامر لحسابة ضريبة بروبوت
 #binfo - اظهار معلومات عن البوت
@@ -844,20 +844,3 @@ client.on('message', function(alone) {
 }
 });
 
-client.on("message", async message => {
-  if (message.content.toLowerCase() === "#Profile") {
-    message.channel.startTyping();
-    setTimeout(() => {
-      message.channel.stopTyping();
-    }, Math.random() * (1 - 3) + 1 * 200).then(
-      message.channel.send({
-        files: [
-          {
-            name: "prfoilebycutie.png",
-            attachment: `https://media.discordapp.net/attachments/947612319872090123/947936783256150056/0495ac7ee9f7b60bd268cda64d87a407.png${message.author.id}`
-          }
-        ]
-      })
-    );
-  }
-})
