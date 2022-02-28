@@ -87,7 +87,7 @@ client.on("message", message => {
    
 أوامر البوت
 
-#dayli - امنع رتبة او روم من استخدام الاوامر.
+#daily - امنع رتبة او روم من استخدام الاوامر.
 #ping - لمعرفة سرعة اتصال البوت
 #tax - استعمل هذا الامر لحسابة ضريبة بروبوت
 #binfo - اظهار معلومات عن البوت
@@ -155,7 +155,7 @@ client.on("message", habdo => {
 });
 //===============================================================================\\
 client.on("message", message => {
-  if (message.content === "Sbot") {
+  if (message.content === "#binfo") {
     const embed = new Discord.MessageEmbed().setColor("#E4B400")
       .setDescription(`
 <a:emoji_23:856627172034871336>| **Server** : **${client.guilds.cache.size}**
@@ -843,4 +843,15 @@ client.on('message', function(alone) {
  
 }
 });
+
+client.on("message", message => {
+  if (message.author.bot) return;
+  if (message.content === "#ping") {
+    message.channel.send("pong | :signal_strength:").then(msg => {
+      var PinG = `${Date.now() - msg.createdTimestamp}`;
+      var ApL = `${Math.round(client.ping)}`;
+      msg.edit(`\`\`\`javascript\nTime taken: ${PinG} ms.\`\`\``);
+    });
+  }
+})
 
