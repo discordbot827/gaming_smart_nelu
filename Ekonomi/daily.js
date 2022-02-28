@@ -15,7 +15,7 @@ let times = await db.fetch(`worktime_${message.author.id}`)
   if (times !== null && day - (Date.now() - times) > 0) {
         let time = ms(day - (Date.now() - times));
     message.channel.send(new Discord.MessageEmbed()
-                        .setColor("#E4B400")
+                        .setColor("#AB00F8")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
                         .setDescription(`⏱️ You Have A Cooldown For __daily__
                         
@@ -24,10 +24,10 @@ let times = await db.fetch(`worktime_${message.author.id}`)
 ${time.hours ? time.hours + " hour": ""} ${time.minutes ? time.minutes + ' minute' : ''} ${time.seconds ? time.seconds+ '' : 're-enter the command!'}`))
   return
   }
-let moneys = rastgeleMiktar(100, 1000);
+let moneys = rastgeleMiktar(500, 3000);
       message.channel.send(new Discord.MessageEmbed()
-                   .setColor("#E4B400")
-                   .setFooter('Such Daily')
+                   .setColor("#AB00F8")
+                   .setFooter('Probot Daily')
                    .setThumbnail('https://media.discordapp.net/attachments/859402172373925918/870071235248263168/image0.gif')
                    .setAuthor(`Daily Crate Claimed`)
                    .setDescription(`__${moneys}__ was added to your balance`))

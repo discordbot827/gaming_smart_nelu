@@ -87,9 +87,9 @@ client.on("message", message => {
    
 أوامر البوت
 
-#daily - امنع رتبة او روم من استخدام الاوامر.
+#daily - استعمل هذا الامر بوت فلوس
 #ping - لمعرفة سرعة اتصال البوت
-#top - استعمل هذا الامر لحسابة بوت كوين بروبوت
+#top - استعمل هذا الامر لحسابة بوت بروبوت
 #binfo - اظهار معلومات عن البوت
 #help - للحصول على جميع اوامر البوت
  
@@ -855,3 +855,29 @@ client.on("message", message => {
   }
 })
 
+client.on("message", message => {
+  if (message.content === "#top") {
+    const embed = new Discord.MessageEmbed()
+      .setThumbnail(client.user.avatarURL())
+      .setColor("#AB00F8")
+      .setAuthor("Top bot").setDescription(`
+Total bot
+nwes command only host bot
+> top Supporter
+> 1 <@>
+> 2 <@>
+> 3 <@>
+> 4 <@>
+> 5 <@>
+> 6 <@>
+> 7 <@>
+> 8 <@>
+> 9 <@>
+> 10 <@>
+
+
+[Support Bot](https://discord.gg/3BZbyTTn3A)
+`);
+    message.channel.send(embed);
+  }
+});
