@@ -820,7 +820,7 @@ client.shop = {
 
 
 client.on('message',async message => {
-  if(message.content === "Suptime") { 
+  if(message.content === "#uptime") { 
     let rozh= Math.floor(client.uptime / 86400000);
     let katzhmer= Math.floor(client.uptime / 3600000) % 24;
     let daqa= Math.floor(client.uptime / 60000) % 60;
@@ -832,7 +832,7 @@ client.on('message',async message => {
 })
 
 client.on('message', function(alone) {
-    if(alone.content === "Ssay") {
+    if(alone.content === "#say") {
 
  let say = alone.content.split(" ").slice(1).join(" ");
       const ALONE = new Discord.MessageEmbed()
@@ -843,3 +843,21 @@ client.on('message', function(alone) {
  
 }
 });
+
+client.on("message", async message => {
+  if (message.content.toLowerCase() === "#Profile") {
+    message.channel.startTyping();
+    setTimeout(() => {
+      message.channel.stopTyping();
+    }, Math.random() * (1 - 3) + 1 * 200).then(
+      message.channel.send({
+        files: [
+          {
+            name: "prfoilebycutie.png",
+            attachment: `https://media.discordapp.net/attachments/947612319872090123/947936783256150056/0495ac7ee9f7b60bd268cda64d87a407.png${message.author.id}`
+          }
+        ]
+      })
+    );
+  }
+})
