@@ -81,7 +81,7 @@ client.on("message", message => {
   if (message.content === "#help") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
-         .setImage("")
+         .setImage("https://media.discordapp.net/attachments/947612319872090123/947964204332220466/1646082640697.png")
       .setColor("#5B2076")
       .setAuthor("Prefix Tax Bot { # }").setDescription(`
    
@@ -864,17 +864,10 @@ client.on("message", message => {
 Total bot
 nwes command only host bot
 > top Supporter
-> 1 <@>
-> 2 <@>
-> 3 <@>
-> 4 <@>
-> 5 <@>
-> 6 <@>
-> 7 <@>
-> 8 <@>
-> 9 <@>
-> 10 <@>
-
+> 1- 10M 100$
+> 2- 5M 50$
+> 3- 1M 15$
+> 4- 500k 5$
 
 [Support Bot](https://discord.gg/3BZbyTTn3A)
 `);
