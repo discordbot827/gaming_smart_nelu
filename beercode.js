@@ -81,7 +81,7 @@ client.on("message", message => {
   if (message.content === "#help") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
-         .setImage("https://media.discordapp.net/attachments/944232459267104808/946451184242266132/image0.jpg")
+         .setImage("")
       .setColor("#5B2076")
       .setAuthor("Prefix Tax Bot { # }").setDescription(`
    
