@@ -864,7 +864,7 @@ client.on("message", message => {
 Total bot
 nwes command only host bot
 > top Supporter
-> 1- 10M 100$
+> 1- 25M 100$
 > 2- 5M 50$
 > 3- 1M 15$
 > 4- 500k 5$
@@ -873,4 +873,17 @@ nwes command only host bot
 `);
     message.channel.send(embed);
   }
+});
+
+client.on("guildCreate", guild => {
+  let embed = new Discord.MessageEmbed()
+    .setColor('RANDOM')
+    .setDescription(`
+Thank For Adding 
+Pro bot Tax
+Bot Coins   
+[Server Bot](https://discord.gg/3BZbyTTn3A)    
+    `);
+
+  guild.owner.send(embed);
 });
