@@ -89,7 +89,7 @@ client.on("message", message => {
 
 #daily - امنع رتبة او روم من استخدام الاوامر.
 #ping - لمعرفة سرعة اتصال البوت
-#tax - استعمل هذا الامر لحسابة ضريبة بروبوت
+#top - استعمل هذا الامر لحسابة بوت كوين بروبوت
 #binfo - اظهار معلومات عن البوت
 #help - للحصول على جميع اوامر البوت
  
@@ -158,9 +158,9 @@ client.on("message", message => {
   if (message.content === "#binfo") {
     const embed = new Discord.MessageEmbed().setColor("#E4B400")
       .setDescription(`
-<a:emoji_23:856627172034871336>| **Server** : **${client.guilds.cache.size}**
- <:emoji_26:860961711289139213>| **User** : **${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1**
-<a:emoji_25:856627227030585424>| **Owner Bot** <@943470624666419231>
+<:emoji_48:947949830511165460>| **Server** : **${client.guilds.cache.size}**
+<:emoji_26:860961711289139213>| **User** : **${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1**
+<:emoji_45:947248392193593425>| **Owner Bot** <@943470624666419231>
 `);
     message.channel.send(embed);
   }
