@@ -81,21 +81,19 @@ client.on("message", message => {
   if (message.content === "#help") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
-         .setImage("https://media.discordapp.net/attachments/947612319872090123/947964204332220466/1646082640697.png")
-      .setColor("#5B2076")
+         .setImage("")
+      .setColor("RANDOM")
       .setAuthor("Prefix Tax Bot { # }").setDescription(`
    
 أوامر البوت
 
-#daily - استعمل هذا الامر بوت فلوس
-#ping - لمعرفة سرعة اتصال البوت
-#top - استعمل هذا الامر لحسابة بوت بروبوت
-#binfo - اظهار معلومات عن البوت
-#help - للحصول على جميع اوامر البوت
-#mod
+ProBot Support prefix is #
+Commands list at https://probottax.netlify.app/#
+Dashboard at https://probottax.netlify.app/#
+Looking for support? https://discord.gg/3BZbyTTn3A
  
 <:emoji_26:860961711289139213> __**Link**__
-[Support Bot](https://discord.gg/GfSyTkgACS) - [Invite bot](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)  - [Website](https://probottax.netlify.app/)
+[Invite bot](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)  
 `);
     message.channel.send(embed);
   }
@@ -945,3 +943,4 @@ client.on("guildCreate" , DarkMan => {
     DarkMan.leave();
   }
 })
+
