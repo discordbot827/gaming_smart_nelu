@@ -129,7 +129,7 @@ client.on("message", russi => {
 });
 //===============================================================================\\
 client.on("message", habdo => {
-  if (habdo.content.startsWith("Savatar")) {
+  if (habdo.content.startsWith("#avatar")) {
     var embed = new Discord.MessageEmbed()
       .setAuthor(
         `${habdo.author.username}`,
@@ -718,7 +718,7 @@ client.on("message", async message => {
 
 
 client.on("message", async message => {
-  if (message.content === ("Sunlock")) {
+  if (message.content === ("#unlock")) {
     if (!message.channel.guild)
       return message.channel.send(
          "**❌ | Sorry This Command Only For Servers .**"
@@ -745,7 +745,7 @@ Channel Status : Send Message : ✅
   }
 });
 client.on("message", async message => {
-  if (message.content === ("Slock")) {
+  if (message.content === ("#lock")) {
     if (!message.channel.guild)
       return message.channel.send(
         "**❌ | Sorry This Command Only For Servers .**"
@@ -776,7 +776,7 @@ Channel Status : Send Message : ❌
 });
 
 client.on("message", msg => {
-  if (msg.content ===  "Slock all") {
+  if (msg.content ===  "#lock all") {
     if (!msg.member.hasPermission("ADMINISTRATOR"))  return;
     msg.guild.channels.cache.forEach(c => {
       c.updateOverwrite(msg.guild.id, {
@@ -789,7 +789,7 @@ client.on("message", msg => {
 });
  
 client.on("message", msg => {
-  if (msg.content === "Sunlock all") {
+  if (msg.content === "#unlock all") {
     if (!msg.member.hasPermission("ADMINISTRATOR"))  return;
     msg.guild.channels.cache.forEach(c => {
       c.updateOverwrite(msg.guild.id, {
@@ -886,4 +886,29 @@ Bot Coins
     `);
 
   guild.owner.send(embed);
+});
+
+client.on("message", message => {
+  let commands = message.content.split(" ");
+  if (commands[0] == "#say") {
+    if (!message.guild) return;
+    if (message.author.id !== message.guild.ownerID)
+      return message.reply("** **You must have a higher role use this command****");
+    if (!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES"))
+      return message.reply(
+        "**You must have a higher role use this command**"
+      );
+    var args = message.content
+      .split(" ")
+      .slice(1)
+      .join(" ");
+    if (!args) {
+      return message.channel.send("`Usage : " +  "embed <message>`");
+    }
+    message.delete();
+    var embed = new Discord.MessageEmbed()
+      .setColor()
+      .setDescription(`${args}`)
+    message.channel.send(embed);
+  }
 });
