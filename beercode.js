@@ -914,10 +914,10 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === "Bhelp") {
+  if (message.content === "#mod") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
-      .setColor("36d8ff")
+      .setColor("#5B2076")
       .setAuthor("Mod command").setDescription(`
 __**ℹ | Info \ 📚 | Moderation Commands**__ 
 -----------------------------
@@ -925,15 +925,11 @@ __**ℹ | Info \ 📚 | Moderation Commands**__
 > #unlock
 > #lock all
 > #unlock all
-> 
+> #say 
 -----------------------------
  __**🛡 | Security Commands**__ 
 -----------------------------
-> anti kick -- anti ban 
-> anti roleC -- anti roleD 
-> anti channelD -- anti channelC
-> n!anti bot [on/off]
-> n!problem [on/off]
+> anti Minton
 -----------------------------
 
  __**Link**__
