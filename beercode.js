@@ -913,3 +913,32 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content === "Bhelp") {
+    const embed = new Discord.MessageEmbed()
+      .setThumbnail(client.user.avatarURL())
+      .setColor("36d8ff")
+      .setAuthor("Mod command").setDescription(`
+__**ℹ | Info \ 📚 | Moderation Commands**__ 
+-----------------------------
+> #lock
+> #unlock
+> #lock all
+> #unlock all
+> 
+-----------------------------
+ __**🛡 | Security Commands**__ 
+-----------------------------
+> anti kick -- anti ban 
+> anti roleC -- anti roleD 
+> anti channelD -- anti channelC
+> n!anti bot [on/off]
+> n!problem [on/off]
+-----------------------------
+
+ __**Link**__
+[Support Bot](https://discord.gg/3BZbyTTn3A)
+`);
+    message.channel.send(embed);
+  }
+});
