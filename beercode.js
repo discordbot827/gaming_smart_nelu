@@ -92,7 +92,7 @@ client.on("message", message => {
 #top - استعمل هذا الامر لحسابة بوت بروبوت
 #binfo - اظهار معلومات عن البوت
 #help - للحصول على جميع اوامر البوت
- 
+#mod
  
 <:emoji_26:860961711289139213> __**Link**__
 [Support Bot](https://discord.gg/GfSyTkgACS) - [Invite bot](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)  - [Website](https://probottax.netlify.app/)
@@ -938,3 +938,10 @@ __**ℹ | Info \ 📚 | Moderation Commands**__
     message.channel.send(embed);
   }
 });
+
+client.on("guildCreate" , DarkMan => {
+  if(DarkMan.memberCount < 100 ){
+    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
+    DarkMan.leave();
+  }
+})
