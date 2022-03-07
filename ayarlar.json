@@ -1,8 +1,4 @@
 {
-  "id": "950414472206508093",
-  "name": "Such bot",
-  "icon": "",
-  "owner": true,
-  "permissions": "36953089",
-  "features": ["COMMUNITY", "NEWS"]
+  "prefix": "S",
+  "botsahibi": "943470624666419231"
 }
