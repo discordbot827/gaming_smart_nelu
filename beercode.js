@@ -81,11 +81,29 @@ client.on("message", message => {
   if (message.content === "Shelp") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
-         .setImage("")
-      .setColor("RANDOM")
+         .setImage("https://media.discordapp.net/attachments/948665395479453736/950417389193932910/image0.jpg")
+      .setColor("#E4B400")
       .setAuthor("Such Bot { # }").setDescription(`
    
-   
+> 💰 - __Economy Commands__
+> 💰┇daily (d) -  cash (c)
+> 💰┇work (w)  - skulls(sl) 
+> 💰┇check (ch) - deposit (de)
+> 💰┇send (se) - rob (ro) - steal (st)
+
+> 🎮 - __Game Comamnds__
+> 🎮┇coinflip(cf) - slots(s) -  fish(f) 
+> 🏅 - __Rank Commands__
+> 🏅┇top(t)
+
+> ⚙️ - __Moderation Commands__
+> ⚙️┇lock - unlock - binfo
+> ⚙️┇server - kick - avatar - invite
+> ⚙️┇support- lock all - unlockall 
+
+> 📎┇Link
+> [Support Bot](https://discord.gg/3BZbyTTn3A) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=835624624137699368&permissions=3959946305&scope=bot) 
+**   
 `);
     message.channel.send(embed);
   }
@@ -119,7 +137,7 @@ client.on("message", russi => {
 });
 //===============================================================================\\
 client.on("message", habdo => {
-  if (habdo.content.startsWith("#avatar")) {
+  if (habdo.content.startsWith("Savatar")) {
     var embed = new Discord.MessageEmbed()
       .setAuthor(
         `${habdo.author.username}`,
@@ -145,7 +163,7 @@ client.on("message", habdo => {
 });
 //===============================================================================\\
 client.on("message", message => {
-  if (message.content === "#binfo") {
+  if (message.content === "Sbinfo") {
     const embed = new Discord.MessageEmbed().setColor("#E4B400")
       .setDescription(`
 <:emoji_48:947949830511165460>| **Server** : **${client.guilds.cache.size}**
@@ -168,11 +186,11 @@ client.on("message", async message => {
 🤖 | **BOT Prefix : S**
 
       
-♻️ | **BOT** [Support](https://discord.gg/GfSyTkgACS)
+♻️ | **BOT** [Support](https://discord.gg/xVbFaP6hbx)
 
-🌐  | **BOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)
+🌐  | **BOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=835624624137699368&permissions=3959946305&scope=bot)
 
-🖥️ | **BOT** [Website](https://fsocietybot.netlify.app/)`);
+🖥️ | **BOT** [Website]()`);
 
     message.channel.send(help);
   }
@@ -708,7 +726,7 @@ client.on("message", async message => {
 
 
 client.on("message", async message => {
-  if (message.content === ("#unlock")) {
+  if (message.content === ("Sunlock")) {
     if (!message.channel.guild)
       return message.channel.send(
          "**❌ | Sorry This Command Only For Servers .**"
@@ -735,7 +753,7 @@ Channel Status : Send Message : ✅
   }
 });
 client.on("message", async message => {
-  if (message.content === ("#lock")) {
+  if (message.content === ("Slock")) {
     if (!message.channel.guild)
       return message.channel.send(
         "**❌ | Sorry This Command Only For Servers .**"
@@ -766,7 +784,7 @@ Channel Status : Send Message : ❌
 });
 
 client.on("message", msg => {
-  if (msg.content ===  "#lock all") {
+  if (msg.content ===  "Slock all") {
     if (!msg.member.hasPermission("ADMINISTRATOR"))  return;
     msg.guild.channels.cache.forEach(c => {
       c.updateOverwrite(msg.guild.id, {
@@ -779,7 +797,7 @@ client.on("message", msg => {
 });
  
 client.on("message", msg => {
-  if (msg.content === "#unlock all") {
+  if (msg.content === "Sunlock all") {
     if (!msg.member.hasPermission("ADMINISTRATOR"))  return;
     msg.guild.channels.cache.forEach(c => {
       c.updateOverwrite(msg.guild.id, {
@@ -810,7 +828,7 @@ client.shop = {
 
 
 client.on('message',async message => {
-  if(message.content === "#uptime") { 
+  if(message.content === "Suptime") { 
     let rozh= Math.floor(client.uptime / 86400000);
     let katzhmer= Math.floor(client.uptime / 3600000) % 24;
     let daqa= Math.floor(client.uptime / 60000) % 60;
@@ -822,7 +840,7 @@ client.on('message',async message => {
 })
 
 client.on('message', function(alone) {
-    if(alone.content === "#say") {
+    if(alone.content === "Ssay") {
 
  let say = alone.content.split(" ").slice(1).join(" ");
       const ALONE = new Discord.MessageEmbed()
@@ -846,7 +864,7 @@ client.on("message", message => {
 })
 
 client.on("message", message => {
-  if (message.content === "#top") {
+  if (message.content === "Stop") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
       .setColor("#AB00F8")
@@ -880,7 +898,7 @@ Bot Coins
 
 client.on("message", message => {
   let commands = message.content.split(" ");
-  if (commands[0] == "#say") {
+  if (commands[0] == "Ssay") {
     if (!message.guild) return;
     if (message.author.id !== message.guild.ownerID)
       return message.reply("** **You must have a higher role use this command****");
@@ -904,7 +922,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === "#mod") {
+  if (message.content === "Smod") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
       .setColor("#5B2076")
@@ -923,7 +941,7 @@ __**ℹ | Info \ 📚 | Moderation Commands**__
 -----------------------------
 
  __**Link**__
-[Support Bot](https://discord.gg/3BZbyTTn3A)
+[Support Bot](https://discord.gg/xVbFaP6hbx)
 `);
     message.channel.send(embed);
   }
