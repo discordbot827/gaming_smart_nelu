@@ -9,7 +9,7 @@ const express = require("express");
 const ayarlar = require("./ayarlar.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login("OTQ0OTkyODYwMjY3MjI5MTk1.YhJrLw.aU048_VSBloq4abSWFggN6Q-J3s");
+client.login("OTUwNDE0NDcyMjA2NTA4MDkz.YiYkdA.ufpMT3ISev7C17_BbHnhM6IgUnE");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -21,14 +21,14 @@ require("./util/eventLoader.js")(client);
 
 //===============================================================================\\
 client.on("ready", async () => {
-  client.user.setActivity(`#help |Server 4/100`, {
+  client.user.setActivity(`Shelp`, {
     type: "PLAYING"
   });
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === "#invite") {
-    emprator.channel.send("https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot");
+  if (emprator.content === "Sinvite") {
+    emprator.channel.send("https://discord.com/api/oauth2/authorize?client_id=950414472206508093&permissions=8&scope=bot");
   }
 });
 //===============================================================================\\
@@ -78,22 +78,14 @@ client.on("guildDelete", guild => {
 });
 //================================================================================\\
 client.on("message", message => {
-  if (message.content === "#help") {
+  if (message.content === "Shelp") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
          .setImage("")
       .setColor("RANDOM")
-      .setAuthor("Prefix Tax Bot { # }").setDescription(`
+      .setAuthor("Such Bot { # }").setDescription(`
    
-أوامر البوت
-
-ProBot Support prefix is #
-Commands list at https://probottax.netlify.app/#
-Dashboard at https://probottax.netlify.app/#
-Looking for support? https://discord.gg/3BZbyTTn3A
- 
-<:emoji_26:860961711289139213> __**Link**__
-[Invite bot](https://discord.com/api/oauth2/authorize?client_id=944992860267229195&permissions=8&scope=bot)  
+   
 `);
     message.channel.send(embed);
   }
