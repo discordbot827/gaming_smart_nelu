@@ -89,12 +89,10 @@ client.on("message", message => {
 > 💰┇daily (d) -  cash (c)
 > 💰┇work (w)  - skulls(sl) 
 > 💰┇check (ch) - deposit (de)
-> 💰┇send (se) - rob (ro) - steal (st)
+> 💰┇send (se) - rob (ro) - steal (st) - top
 
 > 🎮 - __Game Comamnds__
-> 🎮┇coinflip(cf) - slots(s) -  fish(f) 
-> 🏅 - __Rank Commands__
-> 🏅┇top(t)
+> 🎮┇coinflip(cf) - slots(s) -  fish(f) - Shop
 
 > ⚙️ - __Moderation Commands__
 > ⚙️┇lock - unlock - binfo
@@ -102,8 +100,7 @@ client.on("message", message => {
 > ⚙️┇support- lock all - unlockall 
 
 > 📎┇Link
-> [Support Bot](https://discord.gg/3BZbyTTn3A) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=835624624137699368&permissions=3959946305&scope=bot) 
-**   
+> [Support Bot](https://discord.gg/3BZbyTTn3A) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=950414472206508093&permissions=8&scope=bot) 
 `);
     message.channel.send(embed);
   }
