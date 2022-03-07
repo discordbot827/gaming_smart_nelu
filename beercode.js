@@ -87,7 +87,7 @@ client.on("message", message => {
    
 > 💰 - __Economy Commands__
 > 💰┇daily (d) -  cash (c)
-> 💰┇work (w)  - skulls(sl) 
+> 💰┇work (w)
 > 💰┇check (ch) - deposit (de)
 > 💰┇send (se) - rob (ro) - steal (st) - top
 
@@ -100,7 +100,7 @@ client.on("message", message => {
 > ⚙️┇support- lock all - unlockall 
 
 > 📎┇Link
-> [Support Bot](https://discord.gg/3BZbyTTn3A) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=950421881448706110&permissions=8&scope=bot) 
+> [Support Bot](https://discord.gg/3BZbyTTn3A) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=950421881448706110&permissions=8&scope=bot) [Vote bot](https://discordbotlist.com/bots/such-bot)
 `);
     message.channel.send(embed);
   }
