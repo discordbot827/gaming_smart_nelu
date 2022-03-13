@@ -2,4 +2,4 @@ const reqEvent = (event) => require(`../events/${event}`);
 module.exports = client => {
   client.on('message', reqEvent('message'));
 };
-//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
+//== BEERCODE (https://discord.gg/NvFmzB5EfV) BEERCODE ==\\
