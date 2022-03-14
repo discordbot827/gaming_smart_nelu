@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 exports.run = function(client, message, args) {//== BEERCODE (https://discord.gg/NvFmzB5EfV) BEERCODE ==\\
 let yardim = new Discord.MessageEmbed()
-.setTitle("ArtBot✨#5628  | Command List")//== BEERCODE (https://discord.gg/NvFmzB5EfV) BEERCODE ==\\
+.setTitle("Cola bot  | Command List")//== BEERCODE (https://discord.gg/NvFmzB5EfV) BEERCODE ==\\
 .setColor("#ffff00")
 .addField("__💰  Economy__",`
 *\`n!daily\` - __You will earn between 2300-2700 with 24 hours intervals.__**
