@@ -100,7 +100,7 @@ client.on("message", message => {
 > ⚙️┇support- lock all - unlockall 
 
 > 📎┇Link
-> [Support Bot](https://discord.gg/dWnGgVbRWW) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=952735322691735562&permissions=8&scope=bot) [Vote bot](https://discordbotlist.com/bots/such-bot)
+> [Support Bot](https://discord.gg/dWnGgVbRWW) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=952735322691735562&permissions=8&scope=bot) [Vote bot](https://discord.gg/dWnGgVbRWW)
 `);
     message.channel.send(embed);
   }
