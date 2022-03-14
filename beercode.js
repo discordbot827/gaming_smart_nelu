@@ -950,4 +950,7 @@ client.on("guildCreate" , DarkMan => {
     DarkMan.leave();
   }
 })
-
+client.on('ready', () => {
+var channel = client.channels.cache.get('917176930053283911');
+    if (channel) channel.join();
+});
