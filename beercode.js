@@ -874,7 +874,7 @@ nwes command only host bot
 > 3- 1M 15$
 > 4- 500k 5$
 
-[Support Bot](https://discord.gg/3BZbyTTn3A)
+[Support Bot](https://discord.gg/dWnGgVbRWW)
 `);
     message.channel.send(embed);
   }
@@ -887,7 +887,7 @@ client.on("guildCreate", guild => {
 Thank For Adding 
 Pro bot Tax
 Bot Coins   
-[Server Bot](https://discord.gg/3BZbyTTn3A)    
+[Server Bot](https://discord.gg/dWnGgVbRWW)    
     `);
 
   guild.owner.send(embed);
@@ -938,7 +938,7 @@ __**ℹ | Info \ 📚 | Moderation Commands**__
 -----------------------------
 
  __**Link**__
-[Support Bot](https://discord.gg/xVbFaP6hbx)
+[Support Bot](https://discord.gg/dWnGgVbRWW)
 `);
     message.channel.send(embed);
   }
