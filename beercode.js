@@ -9,7 +9,7 @@ const express = require("express");
 const ayarlar = require("./ayarlar.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login("OTUxNzc2ODUyMjExNTQ4MjIx.YisZRA.kkOgsBg9Vp7WDr-aKUlUQavu6pY");
+client.login("OTUyNzM1MzIyNjkxNzM1NTYy.Yi6V6Q.Og5bkOqV2hOH61pYOOOF07s-ftc");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -100,7 +100,7 @@ client.on("message", message => {
 > ⚙️┇support- lock all - unlockall 
 
 > 📎┇Link
-> [Support Bot](https://discord.gg/3BZbyTTn3A) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=950421881448706110&permissions=8&scope=bot) [Vote bot](https://discordbotlist.com/bots/such-bot)
+> [Support Bot](https://discord.gg/dWnGgVbRWW) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=952735322691735562&permissions=8&scope=bot) [Vote bot](https://discordbotlist.com/bots/such-bot)
 `);
     message.channel.send(embed);
   }
@@ -183,9 +183,9 @@ client.on("message", async message => {
 🤖 | **BOT Prefix : S**
 
       
-♻️ | **BOT** [Support](https://discord.gg/xVbFaP6hbx)
+♻️ | **BOT** [Support](https://discord.gg/dWnGgVbRWW)
 
-🌐  | **BOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=950421881448706110&permissions=8&scope=bot)
+🌐  | **BOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=952735322691735562&permissions=8&scope=bot)
 
 🖥️ | **BOT** [Website]()`);
 
@@ -211,7 +211,7 @@ fs.readdir("./Destek/", (err, files) => {
     });
   });
 });
-//== BEERCODE (https://discord.gg/DxytuacsyS) BEERCODE ==\\
+//== BEERCODE (https://discord.gg/dWnGgVbRWW) BEERCODE ==\\
 
 client.load = command => {
   return new Promise((resolve, reject) => {
