@@ -28,13 +28,13 @@ client.on("ready", async () => {
 //===============================================================================\\
 client.on("message", emprator => {
   if (emprator.content === "Sinvite") {
-    emprator.channel.send("https://discord.com/api/oauth2/authorize?client_id=950421881448706110&permissions=8&scope=bot");
+    emprator.channel.send("https://discord.com/api/oauth2/authorize?client_id=952735322691735562&permissions=8&scope=bot");
   }
 });
 //===============================================================================\\
 client.on("message", emprator => {
   if (emprator.content === "#support") {
-    emprator.channel.send("https://discord.gg/GfSyTkgACS");
+    emprator.channel.send("https://discord.gg/dWnGgVbRWW");
   }
 });
 //===============================================================================\\
@@ -69,7 +69,7 @@ client.on("guildCreate", guild => {
 });
 ////////////////////////////////////////////
 client.on("guildDelete", guild => {
-  client.channels.cache.get("947612319872090123").send(`
+  client.channels.cache.get("917176909958381599").send(`
 ❎ **Lift Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
 👑 **Server Owner**: ${guild.owner}
