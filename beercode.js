@@ -165,7 +165,7 @@ client.on("message", message => {
       .setDescription(`
 <:emoji_48:947949830511165460>| **Server** : **${client.guilds.cache.size}**
 <:emoji_26:860961711289139213>| **User** : **${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1**
-<:emoji_45:947248392193593425>| **Owner Bot** <@943470624666419231>
+<:emoji_45:947248392193593425>| **Owner Bot** <@887015240561205268>
 `);
     message.channel.send(embed);
   }
