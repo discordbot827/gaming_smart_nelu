@@ -171,7 +171,7 @@ client.on("message", message => {
       .setDescription(`
 <:emoji_48:947949830511165460>| **Server** : **${client.guilds.cache.size}**
 <:emoji_26:860961711289139213>| **User** : **${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1**
-<:emoji_45:947248392193593425>| **Owner Bot** <@887015240561205268>
+<:emoji_45:947248392193593425>| **Owner Bot** <@789921556846477364>
 `);
     message.channel.send(embed);
   }
@@ -189,7 +189,7 @@ client.on("message", async message => {
 🤖 | **BOT Prefix : S**
 
       
-♻️ | **BOT** [Support](https://discord.gg/dWnGgVbRWW)
+♻️ | **BOT** [Support](https://discord.gg/QDDCbBRVse)
 
 🌐  | **BOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=952735322691735562&permissions=8&scope=bot)
 
