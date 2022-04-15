@@ -8,7 +8,7 @@ const express = require("express");
 const ayarlar = require("./ayarlar.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login("OTUyNzM1MzIyNjkxNzM1NTYy.Yi6V6Q.YqydSOOPyhAUMDhyu6IMct5zPiw");
+client.login("OTMyNzMwMzUxOTM0MTExODE0.YeXO1Q.BVetk5GS6HTWKU-Z8n_OxNvZoiE");
 global.mongoose = require('mongoose')
 mongoose.connect("mongodb+srv://BLACKGENARAL:kalare00000$#@@cluster0.rzsmc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
   console.log("✅ Connected to the database.");
