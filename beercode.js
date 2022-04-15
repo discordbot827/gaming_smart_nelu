@@ -3,13 +3,19 @@ const fs = require("fs");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 const http = require("http");
 const db = require("quick.db");
-const mongoose = require("mongoose")
 const moment = require("moment");
 const express = require("express");
 const ayarlar = require("./ayarlar.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.login("OTUyNzM1MzIyNjkxNzM1NTYy.Yi6V6Q.YqydSOOPyhAUMDhyu6IMct5zPiw");
+global.mongoose = require('mongoose')
+mongoose.connect("mongodb+srv://BLACKGENARAL:kalare00000$#@@cluster0.rzsmc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+  console.log("✅ Connected to the database.");
+}).catch((err) => {
+  console.log("❎ Unable to connect to the Mongodb database. Error:" + err);
+});
+
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
